@@ -1,4 +1,4 @@
-# Financial-Planning-Case-Study
+# Financial Planning Case Study
 
 ## Disclaimer
 **Note:** All data presented in this project is fictitious and used solely for demonstration purposes. This case study does not provide specific financial advice.
