@@ -1,3 +1,7 @@
+#### Disclaimer
+**Note:** All data presented in this project is fictitious and used solely for demonstration purposes.
+
+
 # Financial-Planning-Case-Study
 
 # Family Members:
