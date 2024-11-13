@@ -1,8 +1,4 @@
-
-
----
-
-# Financial-Planning-Case-Study
+                                                                                      # Financial-Planning-Case-Study
 
 ## Disclaimer
 **Note:** All data presented in this project is fictitious and used solely for demonstration purposes. This case study does not provide specific financial advice.
@@ -132,7 +128,3 @@ Elizabeth is developing a balanced plan that respects John and Jane’s hesitanc
 
 - **Registered Education Savings Plan (RESP)**: Elizabeth may recommend an RESP for Marry’s education savings. RESPs offer tax-deferred growth and potential government matching through the Canada Education Savings Grant (CESG), which is beneficial for Canadian families saving for education.
 - **RRSP and TFSA Strategy**: John and Jane’s plan will consider contributions to RRSPs and TFSAs, balancing the tax benefits and potential growth of each to maximize their retirement savings.
-
----
-
-This README now has all the elements needed to present the project clearly, with a focus on the Canadian financial planning context.
