@@ -31,7 +31,7 @@ class Advisor:
 
 
 class Client:
-    def __init__(self, first_name: str, last_name: str, birthday: str, age: int, street_address: str, postal_code: str, snn: int, has_beneficiary: bool, beneficiary_name: Optional[str], has_life_insurance: bool, has_financial_advisor: bool, advisor_first_name: str, advisor_last_name: str, advisor_id: str, advisor_business_name: str, advisor_designation: str, has_tax_agent: bool, income: dict[str, int], debt: dict[str, int], assets: dict[str, int], investments: dict[str, int], life_insurnace_death_benefit: int, net_worth: int, job_title: str, client_id: str, client_family: Optional[int], client_status: bool):
+    def __init__(self, first_name: str, last_name: str, birthday: str, age: int, street_address: str, postal_code: str, snn: int, has_beneficiary: bool, beneficiary_name: Optional[str], has_life_insurance: bool, has_financial_advisor: bool, advisor_first_name: str, advisor_last_name: str, advisor_id: str, advisor_business_name: str, advisor_designation: str, has_tax_agent: bool, income: dict[str, int], debt: dict[str, int], assets: dict[str, int], investments: dict[str, int], life_insurnace_death_benefit: int, net_worth: int, job_title: str, client_id: str, client_family: Optional[str], client_status: bool):
         self.first_name = first_name
         self.last_name = last_name
         self.birthday = birthday
@@ -80,4 +80,32 @@ class NetWorth:
 # Make a family class for each client:
 
 
+class Family:
+    def __init__(self, client_id: str, family_id: int, client_family: [str], advisor_first_name: str):
+        self.client_id = client_id
+        self.client_family = client_family
+        self.family_id = family_id
+        self.advisor_first_name = advisor_first_name
+
+    def get_family_tree(self):
+        for member in self.client_family:
+            print(member)
+        return self.client_family
+
+    def __str__(self):
+        return f"The {', '.join(self.client_family)}'s advisor is {self.advisor_first_name}"
+
+
 # Make class for cases:
+
+class Case:
+    def __init__(self, family_id: int, plan_type: list[str], reason_why_letter: str, investment_risk_assessment: str, investments: dict[str, int], insurance: dict[str, int]):
+        self.family_id = family_id
+        self.plan_type = plan_type
+        self.reason_why_letter = reason_why_letter
+        self.investment_risk_assessment = investment_risk_assessment
+        self.investments = investments
+        self.insurance = insurance
+
+    def __str__(self):
+        return f"{self.family_id} is currently on {self.plan_type}"
