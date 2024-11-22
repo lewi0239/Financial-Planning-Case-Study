@@ -27,7 +27,7 @@ class Advisor:
         self.advisor_designation = advisor_designation
 
     def __str__(self):
-        return f"{self.advisor_first_name} {self.advisor_lewis_name} works at {self.advisor_business_name}"
+        return f"{self.advisor_first_name} {self.advisor_last_name} works at {self.advisor_business_name}"
 
 
 class Client:
