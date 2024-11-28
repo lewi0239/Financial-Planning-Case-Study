@@ -86,6 +86,9 @@ def get_net_cash_flow(cash_flow_in: int, cash_flow_out: int):
 
 
 # TVM
+"""
+This section can calculate debt payments, investment payments, some accounting questions, cashflow concerns, NPV
+"""
 
 
 def tvm_pv(fv: float, i: float, n: float) -> float:
@@ -121,3 +124,18 @@ def retirement_savings_goal(fv: float, i: float, n: float) -> float:
 def loan_balance(pv: float, i: float, n: float, pmt: float) -> float:
     """Calculate Remaining Loan Balance."""
     return pv * (1 + i) ** n - pmt * (((1 + i) ** n - 1) / i)
+
+
+def one_time_npv(cash_flow: float, discount_rate: float, time_periods: float) -> float:
+    return (cash_flow / (1 + discount_rate)**time_periods)
+
+
+def const_npv(cashflow: float, ):
+
+
+def changing_pmt_npv():
+    pass
+
+
+def chaning_i_npv():
+    pass
